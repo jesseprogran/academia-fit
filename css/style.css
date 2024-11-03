@@ -30,17 +30,16 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   /*cor da barra*/
-  background:#FF9500;
+  background: #ff9500;
 }
 
 body {
-  background: #FF9500
+  background: #000000;
 }
 
 section {
   padding: 5rem 9%;
 }
-
 
 /* Cabeçalhos */
 
@@ -50,12 +49,12 @@ section {
   position: relative;
 }
 .heading::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  height: .1rem;
+  height: 0.1rem;
   width: 100%;
   background: #aaa;
   z-index: -1;
@@ -64,17 +63,16 @@ section {
   font-size: 3rem;
   color: rgb(5, 238, 21);
   background: #000;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border: 0.1rem solid #aaa;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 .btn {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 2.8rem;
   padding-right: 3rem;
-  background: linear-gradient(130deg, rgb(5, 238, 21) 93%, 
-  transparent 90%);
+  background: linear-gradient(130deg, rgb(243, 146, 0) 93%, transparent 90%);
   color: #fff;
   cursor: pointer;
   font-size: 1.7rem;
@@ -82,7 +80,6 @@ section {
 .btn:hover {
   transform: scale(1.1);
 }
-
 
 .header {
   position: fixed;
@@ -100,12 +97,12 @@ section {
 
 .header .logo {
   font-weight: bolder;
-  color: #FF9500;
+  color: #ff9500;
   font-size: 3rem;
 }
 
 .header .logo span {
-  color:#fff;
+  color: #fff;
 }
 
 .header .navbar a {
@@ -113,13 +110,13 @@ section {
   padding: 1.5rem 2rem;
   font-size: 1.7rem;
   color: #fff;
-  text-decoration: none; 
-  position: relative; 
-  transition: color 0.3s ease; 
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .header .navbar a:hover {
-  color: #f89203; 
+  color: #f89203;
 }
 
 #menu-btn {
@@ -127,4 +124,125 @@ section {
   color: #fff;
   cursor: pointer;
   display: none;
+}
+
+/* Home */
+
+.home {
+  padding: 0;
+  margin-top: 5rem;
+}
+
+.home .slide {
+  min-height: 90vh;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 2rem 9em;
+  display: flex;
+  align-items: center;
+}
+
+.home .slide .content {
+  width: 60rem;
+}
+
+.home .slide .content span {
+  font-size: 2rem;
+  color: #ff9500;
+  display: block;
+}
+
+.home .slide .content h3 {
+  font-size: 5rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/*class de swipwer para criar as bolinhas*/
+.swiper-pagination-bullet {
+  height: 2rem;
+  width: 2rem;
+  background: #fff;
+  border-radius: 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: rgb(255, 115, 0);
+}
+
+/* About */
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.about .image {
+  flex: 1 1 33rem;
+  position: relative;
+}
+
+.about .image::before,
+.about .image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: rgb(255, 115, 0);
+  height: 5rem;
+  width: 10rem;
+}
+.about .image::before {
+  top: 0;
+  left: 0;
+}
+
+.about .image::after {
+  bottom: 0;
+  right: 0;
+}
+.about .image img {
+  width: 100%;
+  padding: 2rem;
+}
+
+.about .content {
+  flex: 1 1 42rem;
+}
+.about .content span {
+  font-size: 2rem;
+  color: rgb(255, 115, 0);
+}
+
+.about .content .title {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+.about .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.about .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.about .content .box-container .box {
+  flex: 1 1 20rem;
+}
+
+.about .content .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.about .content .box-container .box h3 i {
+  padding-right: 1.5rem;
+  color: rgb(255, 115, 0);
 }
