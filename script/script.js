@@ -10,8 +10,7 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 /* Slides */
-
-var swiper = new Swiper(".home-slider", {
+const swiperHome = new Swiper(".home-slider", {
   spaceBetween: 20,
   effect: "fade",
   grabCursor: true,
@@ -26,7 +25,7 @@ var swiper = new Swiper(".home-slider", {
   },
 });
 
-var swiper = new Swiper(".review-slider", {
+const swiperReview = new Swiper(".review-slider", {
   spaceBetween: 20,
   grabCursor: true,
   loop: true,
@@ -44,7 +43,7 @@ var swiper = new Swiper(".review-slider", {
   },
 });
 
-var swiper = new Swiper(".blogs-slider", {
+const swiperBlogs = new Swiper(".blogs-slider", {
   spaceBetween: 20,
   grabCursor: true,
   loop: true,

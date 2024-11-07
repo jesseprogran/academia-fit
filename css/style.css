@@ -303,7 +303,6 @@ section {
 
 /* Preços */
 
-
 .pricing {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -316,7 +315,7 @@ section {
 }
 .pricing .information h3 {
   font-size: 4rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   color: #fff;
 }
 
@@ -329,7 +328,7 @@ section {
 
 .pricing .information p i {
   padding-right: 1rem;
-color: #f89203;
+  color: #f89203;
 }
 
 .pricing .plan {
@@ -371,76 +370,136 @@ color: #f89203;
 
 .pricing .plan .list p i {
   padding-right: 1rem;
-color: #f89203;
+  color: #f89203;
+}
+
+/* trinadores */
+
+.trainers .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+
+.box {
+  border-radius: 5px;
+}
+.trainers .box-container .box {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+.trainers .box-container .box:hover .content {
+  transform: translateY(0);
+}
+
+.trainers .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.trainers .box-container .box .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  padding: 2rem;
+  transform: translateY(6.5rem);
+}
+
+.trainers .box-container .box .content span {
+  font-size: 1.5rem;
+  color: #ff9500;
+}
+
+.trainers .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+.trainers .box-container .box .content .share {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #aaa;
+}
+
+.trainers .box-container .box .content .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.trainers .box-container .box .content .share a:hover {
+  color: #f89203;
 }
 
 @media (max-width: 991px) {
   html {
-      font-size: 55%;
-      scroll-padding: 7rem;
+    font-size: 55%;
+    scroll-padding: 7rem;
   }
   .header {
-      padding: 0 2rem;
+    padding: 0 2rem;
   }
 
   section {
-      padding: 3rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .home .slide {
-      padding: 2rem 5%;
+    padding: 2rem 5%;
   }
 
   .home .slide .content {
-      width: 50rem;
+    width: 50rem;
   }
 
   .home .slide .content h3 {
-      font-size: 4rem;
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 768px) {
   #menu-btn {
-      display: inline-block;
+    display: inline-block;
   }
 
   #menu-btn.fa-times {
-      transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 
   .header {
-      padding: 2rem;
+    padding: 2rem;
   }
 
   .header .navbar {
-      position: absolute;
-      top: 99%;
-      left: 0;
-      right: 0;
-      background: #000;
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
   .header .navbar.active {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   .header .navbar a {
-      display: block;
-      font-size: 2rem;
+    display: block;
+    font-size: 2rem;
   }
 
   .about {
-      gap: 3rem;
+    gap: 3rem;
   }
 
   .about .image {
-      margin-top: 5rem;
+    margin-top: 5rem;
   }
 
   .about .content .title {
-      font-size: 3rem;
+    font-size: 3rem;
   }
-
 }
