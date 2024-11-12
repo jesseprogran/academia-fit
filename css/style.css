@@ -24,12 +24,12 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  /*o que fica abaixo da barra*/
+  
   background: #000;
 }
 
 html::-webkit-scrollbar-thumb {
-  /*cor da barra*/
+
   background: #ff9500;
 }
 
@@ -40,8 +40,6 @@ body {
 section {
   padding: 5rem 9%;
 }
-
-/* Cabeçalhos */
 
 .heading {
   text-align: center;
@@ -126,7 +124,6 @@ section {
   display: none;
 }
 
-/* Home */
 
 .home {
   padding: 0;
@@ -158,7 +155,6 @@ section {
   padding: 1rem 0;
 }
 
-/*class de swipwer para criar as bolinhas*/
 .swiper-pagination-bullet {
   height: 2rem;
   width: 2rem;
@@ -170,7 +166,6 @@ section {
   background: rgb(255, 115, 0);
 }
 
-/* About */
 
 .about {
   display: flex;
@@ -274,8 +269,6 @@ section {
 .features .box-container .box .image img {
   height: 100%;
   width: 100%;
-  /*a imagem é dimensionado para manter sua proporção e preencher 
-  toda a caixa de conteúdo do elemento*/
   object-fit: cover;
 }
 .features .box-container .box .content {
@@ -301,7 +294,7 @@ section {
   padding: 1rem 0;
 }
 
-/* Preços */
+
 
 .pricing {
   display: grid;
@@ -373,7 +366,7 @@ section {
   color: #f89203;
 }
 
-/* trinadores */
+
 
 .trainers .box-container {
   display: grid;
@@ -434,7 +427,7 @@ section {
   color: #f89203;
 }
 
-/* banner */
+
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -464,8 +457,6 @@ section {
   color: #aaa;
   line-height: 2;
 }
-
-/* Feedbacks */
 
 
 .review {
@@ -542,7 +533,60 @@ section {
  color: #f89203;
 }
 
+.blogs .slide {
+  background: #111;
+  margin-bottom: 7rem;
+}
 
+.blogs .slide:hover .image img {
+  transform: scale(1.1);
+}
+
+.blogs .slide .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.blogs .slide .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .slide .content {
+  padding: 2rem;
+}
+
+.blogs .slide .content .link {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.blogs .slide .content .link a {
+color: #f89203;
+}
+
+.blogs .slide .content .link a:hover {
+  color: #fff;
+}
+
+.blogs .slide .content .link span {
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.blogs .slide .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
+  padding: 1rem 0;
+}
 
 
 
@@ -614,4 +658,4 @@ section {
   .about .content .title {
     font-size: 3rem;
   }
-}
+} 
